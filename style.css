@@ -1,1 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #4a90e2, #50d1b4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-10px);
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4a90e2;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #50d1b4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #3cb497;
+  transform: translateY(-5px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#resultado {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Animação pulsante para nome e RU */
+.pulsating-info {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.info {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+}
+
+.info p {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 400px) {
+  .container {
+      padding: 20px;
+      max-width: 90%;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  button {
+      font-size: 16px;
+  }
+
+  .info p {
+      font-size: 12px;
+  }
+}
 
