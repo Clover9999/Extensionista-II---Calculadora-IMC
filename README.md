@@ -31,4 +31,4 @@ O principal objetivo da calculadora é:
 
 1. Clone este repositório em sua máquina local:
    ```bash
-   git clone https://github.com/Clover9999/Extensionista-II---Calculadora-IMC
+   https://github.com/Clover9999/Extensionista-II---Calculadora-IMC
